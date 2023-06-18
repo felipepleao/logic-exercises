@@ -24,20 +24,6 @@ Saída
 Imprima 3 linhas na saída: o novo salário, o valor ganho de reajuste (ambos devem ser apresentados com 2 casas decimais) e o percentual de reajuste ganho, conforme exemplo abaixo.
 */
 
-// let expression ='a'
-
-// switch(expression) {
-// 	case 'a':
-// 		console.log('a')
-// 		break;
-// 	case 'b':
-// 		console.log('b')
-// 		break;
-// 	default:
-// 		console.log('default')
-// 		break;
-// }
-
 var input = require("fs").readFileSync("./dev/stdin", "utf8");
 var lines = input.split(" ");
 
