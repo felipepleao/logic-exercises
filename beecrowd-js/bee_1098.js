@@ -19,5 +19,5 @@ for (countI; countI <= 2; countI += 0.2) {
   console.log(`I=${countI.toFixed(1)} J=${countJ + 1}`)
   console.log(`I=${countI.toFixed(1)} J=${countJ + 2}`)
 
-  countJ += 0.2;
+  countJ += 0.1;
 }
