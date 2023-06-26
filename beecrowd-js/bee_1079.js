@@ -11,11 +11,48 @@ Para cada caso de teste, imprima a média ponderada dos 3 valores, conforme exem
 var input = require("fs").readFileSync("./dev/stdin", "utf8");
 var lines = input.split("\n");
 
-const number = parseInt(lines.shift());
+const repetition = lines.shift();
 
-for (let i = 1; i <= 10; i++) {
-    let count = i * number
-    console.log(`${i} x ${number} = ${count}`)
+const firstNumbers = lines
+  .shift()
+  .trim()
+  .split(" ")
+  .map((n) => Number(n));
+const secondNumbers = lines
+  .shift()
+  .split(" ")
+  .map((n) => Number(n));
+const thirdNumbers = lines
+  .shift()
+  .split(" ")
+  .map((n) => Number(n));
+
+let firstWeightedAverage = 0;
+let secondWeightedAverage = 0;
+let thirdWeightedAverage = 0;
+
+for (let i = 0; i < repetition; i++) {
+  if (i == 0) {
+    firstSum = firstNumbers[i] * 2;
+    secondSum = secondNumbers[i] * 2;
+    thirdSum = thirdNumbers[i] * 2;
+  } else if (i == 1) {
+    firstSum = firstNumbers[i] * 3;
+    secondSum = secondNumbers[i] * 3;
+    thirdSum = thirdNumbers[i] * 3;
+  } else {
+    firstSum = firstNumbers[i] * 5;
+    secondSum = secondNumbers[i] * 5;
+    thirdSum = thirdNumbers[i] * 5;
+  }
+
+  firstWeightedAverage += firstSum;
+  secondWeightedAverage += secondSum;
+  thirdWeightedAverage += thirdSum;
+  
+  console.log((firstWeightedAverage / 10).toFixed(1));
+  console.log((secondWeightedAverage / 10).toFixed(1));
+  console.log((thirdWeightedAverage / 10).toFixed(1));
 }
 
 
