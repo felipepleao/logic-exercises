@@ -57,7 +57,7 @@ console.log(`Percentual de ratos: ${percentMouses} %`)
 console.log(`Percentual de sapos: ${percentFrogs} %`)
 
 
-// arrayLines.forEach(test => {
+// //arrayLines.forEach(test => {
 
 //   let arrayTest = test.split(' ')
 //   amountOfTest = Number(arrayTest.shift())
