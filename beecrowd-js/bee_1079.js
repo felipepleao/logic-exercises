@@ -54,3 +54,5 @@ for (let i = 0; i < repetition; i++) {
   console.log((secondWeightedAverage / 10).toFixed(1));
   console.log((thirdWeightedAverage / 10).toFixed(1));
 }
+
+//att
