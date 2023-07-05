@@ -49,11 +49,8 @@ for (let i = 0; i < repetition; i++) {
   firstWeightedAverage += firstSum;
   secondWeightedAverage += secondSum;
   thirdWeightedAverage += thirdSum;
-  
+
   console.log((firstWeightedAverage / 10).toFixed(1));
   console.log((secondWeightedAverage / 10).toFixed(1));
   console.log((thirdWeightedAverage / 10).toFixed(1));
 }
-
-
-
