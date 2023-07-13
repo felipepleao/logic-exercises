@@ -55,4 +55,4 @@ for (let i = 0; i < repetition; i++) {
   console.log((thirdWeightedAverage / 10).toFixed(1));
 }
 
-//a
+//
